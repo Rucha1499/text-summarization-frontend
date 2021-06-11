@@ -15,9 +15,8 @@ const handleSubmitEvent = async (formData) => {
         method: 'POST',
         body: formData
     })
-
+    
     const data = await response.json()
-    console.log("data from API", data)
     return data.output
 }
 
