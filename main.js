@@ -1,29 +1,20 @@
-const BASE_URL = "http://127.0.0.1:8000/"
+const BASE_URL = "http://f3c9-35-196-32-235.ngrok.io"
 
-const inputFile = document.getElementById("input-file")
+const inputBox = document.getElementById("youtube-url")
 const submitButton = document.getElementById("submit-button")
 
-const createFormData = (files) => {
-    const formData = new FormData()
-    formData.append('file', files[0])
-    return formData
-}
+let youTubeUrl;
 
-const handleSubmitEvent = async (formData) => {
-
-    const response = await fetch(BASE_URL, {
-        method: 'POST',
-        body: formData
-    })
-    
-    const data = await response.json()
-    return data.output
-}
-
-submitButton.addEventListener('click', async (event) => {
-    document.getElementById("output").innerText = "Loading..."
-    const formData = createFormData(inputFile.files)
-    const displayThisData = await handleSubmitEvent(formData)
-    
-    document.getElementById("output").innerText = `${displayThisData}`
+inputBox.addEventListener('input',(e) => {
+    youTubeUrl = e.target.value;
 })
+
+const getSummary = async() => {
+    const API_URL = `${BASE_URL}/api/summarize?youtube_url=${youTubeUrl}`
+    const response = await fetch(API_URL, {
+        mode:"no-cors"
+    });
+    console.log(response)
+}
+
+submitButton.addEventListener('click', getSummary);
