@@ -4,34 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Text Summarization</title>
+    <title>youTube Summarizer</title>
    
 </head>
 <body>
-
-    <div class="main-title">
-        <h1>Text Summarization Application</h1>
-    </div>
     <div class="main-container">
-        <div class="title">
-            <h2>Upload your text/files here!👇</h2>
-        </div>
-        <div class="input-box">
-            <input id="youtube-url"/>
-        </div>
-        <div class="button">
-            <button id="submit-button" type="submit">Summarize</button>
+        <div class="youTube">
+            <div class="header">
+                <a href="https://www.freeiconspng.com/img/46037" title="Image from freeiconspng.com"><img src="https://www.freeiconspng.com/uploads/white-youtube-logo-png-28.png" width="170" alt="White Youtube Logo PNG" /></a>
+                <h1>Summarizer</h1>
+            </div>
+            <div class="title">
+                <h2>Go ahead by putting the url/ link of youTube video.</h2>
+            </div>
+            <div class="content">
+                <div class="input-box">
+                    <input id="youtube-url" placeholder="Enter the youTube url, for e.g - https://www.youtube.com/watch?v=-pTGc7cIBIA"/>
+                </div>
+                <div class="button">
+                    <button id="submit-button" type="submit">Summarize -></button>
+                </div>
+            </div>
+
+                <h3>
+                    Find your summary right below. ⬇
+                </h3>
+       
+            <div id="output"><h4>Your summarized content will soon appear...</h4></div>
         </div>
     </div>
-    <br>
-    <br>
-
-    <div id="output"><h2>Your summarized text</h2></div>
-    <br>
-    
-    
     <script src="main.js"></script>
 </body>
 </html>

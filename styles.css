@@ -1,0 +1,97 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  line-height: normal;
+  color: white;
+  font-family: 'Inter', sans-serif;
+}
+
+.main-container {
+  background-image: url('./bg.jpg');
+  background-size: cover;
+  height:100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+}
+
+.title {
+  font-size: 26px;
+  font-weight: bold;
+  margin-top: 40px;
+}
+
+.youTube {
+  width: 50%;
+  margin: auto;
+}
+
+.input-box {
+  width: 80%;
+}
+
+#youtube-url {
+  width: 94%;
+  padding: 16px 8px;
+  border-radius: 5px;
+  border: transparent;
+  font-family: 'Inter', sans-serif;
+  font-weight: bold;
+}
+
+#submit-button {
+  width: 96%;
+  padding: 16px 8px;
+  border-radius: 5px;
+  border:transparent;
+  font-family: 'Inter', sans-serif;
+  font-weight: 900;
+  background-color: #FF3659;
+  font-size: 14px;
+  color: white;
+  cursor: pointer;
+}
+
+#submit-button:hover {
+  background-color: #FF92A5;
+}
+
+.button {
+  width: 20%;
+}
+
+h4 {
+  text-align: center;
+  color: #FF3659;
+}
+
+h3 {
+  margin-top: 40px;
+}
+
+h1 {
+  font-weight: bolder;
+  color: #FF3659;
+}
+
+#output {
+  background-color: white;
+  border:transparent;
+  border-radius: 5px;
+  width: 94%;
+  height: auto;
+  padding: 16px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
