@@ -1,7 +1,8 @@
-const BASE_URL = "http://f3c9-35-196-32-235.ngrok.io"
+const BASE_URL = "http://localhost:5000";
 
 const inputBox = document.getElementById("youtube-url")
 const submitButton = document.getElementById("submit-button")
+const displayBox = document.getElementById('output');
 
 let youTubeUrl;
 
@@ -10,11 +11,11 @@ inputBox.addEventListener('input',(e) => {
 })
 
 const getSummary = async() => {
+    displayBox.innerText = 'Please wait...'
     const API_URL = `${BASE_URL}/api/summarize?youtube_url=${youTubeUrl}`
-    const response = await fetch(API_URL, {
-        mode:"no-cors"
-    });
-    console.log(response)
+    const response = await fetch(API_URL);
+    const jsonReponse = await response.text();
+    displayBox.innerText = jsonReponse;
 }
 
 submitButton.addEventListener('click', getSummary);
