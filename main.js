@@ -12,7 +12,7 @@ inputBox.addEventListener('input',(e) => {
 
 const getSummary = async() => {
     displayBox.innerText = 'Please wait...'
-    const API_URL = `${BASE_URL}/api/summarize?youtube_url=${youTubeUrl}`
+    const API_URL = `${BASE_URL}/summarize?youtube_url=${youTubeUrl}`
     const response = await fetch(API_URL);
     const jsonReponse = await response.text();
     displayBox.innerText = jsonReponse;
