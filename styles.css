@@ -72,9 +72,6 @@ h4 {
   color: #FF3659;
 }
 
-h3 {
-  margin-top: 40px;
-}
 
 h1 {
   font-weight: bolder;
@@ -85,12 +82,12 @@ h1 {
   background-color: white;
   border:transparent;
   border-radius: 5px;
-  width: 94%;
+  width: 95%;
   height: auto;
   padding: 16px;
   color: black;
   font-weight: bold;
-  margin-bottom: 40px;
+  margin: 40px 0;
 }
 
 .header {
