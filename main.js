@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:5000";
+const BASE_URL = "https://youtube-summariser.herokuapp.com";
 
 const inputBox = document.getElementById("youtube-url")
 const submitButton = document.getElementById("submit-button")
